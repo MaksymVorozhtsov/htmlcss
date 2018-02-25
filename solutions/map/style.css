@@ -1,0 +1,16 @@
+body {background-color: orangered;}
+.map-wrap {background-color: orangered; height: 95vh; display: flex; justify-content: center; align-items: center;}
+.map-container {width:900px;height:437px;padding:20px 0;margin: 0 auto;background-image: url('img/map-900.png');background-color:orangered;background-position: center center;background-repeat:no-repeat;background-size:contain; position: relative;}
+.marker {position: absolute;}
+.atlanta {top: 110px; left: 150px;}
+.ba {top: 325px; left: 225px;}
+.frankfurt {top: 85px; left: 410px;}
+.marker-link {display: none;position: absolute;color: #fff;font-weight: bold;top: -20px;}
+.marker-link-atlanta {top:-20px;left:-13px;}
+.marker-link-ba {top:-20px;left:-35px;width:110px;}
+.marker-link-frankfurt {top:-20px;left:-23px;width:80px;}
+.marker:hover {cursor: pointer;}
+.marker:hover > .marker-link {display: block;}
+@media screen and (max-width: 1000px) {.map-container {width:750px;height: 364px;} .atlanta {top: 100px; left: 120px;} .ba {top: 285px; left: 180px;} .frankfurt {top: 65px; left: 345px;}}
+@media screen and (max-width: 768px) {.map-container {width:460px;height: 223px;} .atlanta {top: 50px; left: 70px;} .ba {top: 170px; left: 105px;} .frankfurt {top: 30px; left: 205px;}}
+@media screen and (max-width: 480px) {.map-container {width:300px;height: 145px;} .atlanta {top: 30px; left: 40px;} .ba {top: 100px; left: 65px;} .frankfurt {top: 15px; left: 130px;}}
